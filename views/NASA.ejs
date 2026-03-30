@@ -6,8 +6,7 @@
 <body>
     <h1>NASA</h1>
     <%- include('partials/nav.ejs') %>
-    </nav>
-    <h3>Title of Picture</h3>
+    <h2>Title of Picture</h2>
     <%= data.title %>
     <h3>Description</h3>
     <p> <%= data.explanation %></p>
@@ -15,7 +14,7 @@
     <p> <%= data.date %></p>
     <h3>Copyright</h3>
     <p> <%= data.copyright %></p>
-    <img src="<%= data.url %>">
+    <img src="<%= data.url %>" alt="<%= data.title %>">
     <%- include('partials/footer.ejs') %>
 </body>
 </html>
