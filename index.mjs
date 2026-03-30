@@ -18,12 +18,7 @@ app.get('/NASA', async(req, res) => {
     let response = await fetch(url);
     let data = await response.json();
     let randomNASA = data.url;
-    res.render("NASA",{"image":randomNASA})
-});
-
-app.get('/NASA', (req, res) => {
-    console.log(NASA);
-    res.render('NASA', {NASA});
+    res.render("NASA",{"image2":randomNASA})
 });
 
 
