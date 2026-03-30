@@ -5,13 +5,15 @@
 </head>
 <body>
     <h1>The Solar System</h1>
-     <nav><a href="/"> Home </a> 
-         <a href="/earth"> Earth </a>
-         <a href="/mars"> Mars </a>
-    </nav>
+    <%- include('partials/nav.ejs') %>
     <h2> <%= planetName %></h2>
 
     <p> <%= planetInfo.description %></p>
+    <p> <%= planetInfo.distanceFromSun %></p>
+    <p> <%= planetInfo.yearLength %></p>
+    <p> <%= planetInfo.radius %></p>
+    <p> <%= planetInfo.websiteLink %></p>
+    <p> <%= planetInfo.moons %></p>
 
     <img src="<%= planetInfo.image %>">
 </body>
